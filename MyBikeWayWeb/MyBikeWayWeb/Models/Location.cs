@@ -1,10 +1,13 @@
-﻿namespace MyBikeWayWeb.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MyBikeWayWeb.Models
 {
     public class Location
     {
         /// <summary>
         /// Database index
         /// </summary>
+        [Key]
         public int Id { get; set; }
         /// <summary>
         /// Location name
